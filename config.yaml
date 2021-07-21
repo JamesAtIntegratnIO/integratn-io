@@ -39,7 +39,7 @@ params:
   email: boboysdadda@gmail.com # used for microformats
   avatar: "/images/me.jpg" # used for microformats
   images: 
-  - "/static/images/me.jpg"
+  - "images/me.jpg"
   description: "A lot of Devops | with just a little bit of crazy"
   dateFormat: "2006-01-02"
   paginationSinglePost: true
