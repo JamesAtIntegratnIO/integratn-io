@@ -4,7 +4,7 @@ title: "INTEGRATN.io"
 theme: "anubis"
 paginate: 10
 # disqusShortname: "yourdiscussshortname"
-googleAnalytics: HUGO_PARAMS_GOOGLE_ANALYTICS
+googleAnalytics: HUGO_GOOGLE_ANALYTICS
 enableRobotsTXT: true
 
 menu:
