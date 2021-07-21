@@ -22,7 +22,7 @@ Initialize the folder as a go project
 $ GO111MODULE=on go mod init hellofromintegratnio
 ```
 
-Add the folloing code to main.go
+Add the following code to main.go
 
 ```golang
 package main
@@ -221,4 +221,4 @@ hellofromintegratnio  latest     dee090a053a3        About an hour ago   321MB
 
 So, we have the `dev` tag we just created. But lets look at the `IMAGE ID`. The `dev` tag and the `latest` tag have the same `IMAGE ID`. This is what we want because it is the most recently created image. 
 
-So what is this `<none>` image? If you scroll up. You will see that the `<none> IMAGE ID` mathes the `IMAGE ID` from our first build. This shows you what happens when you don't properly tag your images. If you built another image using the `dev` tag. The same thing would happen to that image. But this is local testing and not a production release. So no big deal. 
+So what is this `<none>` image? If you scroll up. You will see that the `<none> IMAGE ID` matches the `IMAGE ID` from our first build. This shows you what happens when you don't properly tag your images. If you built another image using the `dev` tag. The same thing would happen to that image. But this is local testing and not a production release. So no big deal. 

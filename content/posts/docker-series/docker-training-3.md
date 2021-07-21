@@ -23,12 +23,12 @@ Lets step through this command 1 piece at a time.
 
 `-publish`: [Publish](https://docs.docker.com/engine/reference/commandline/run/#publish-or-expose-port--p---expose) will bind a local port to a port in the container.
 
-`127.0.0.1`: `127.0.0.1` keeps us only exposing localhost, so our container won't be available outside of our machine.
+`127.0.0.1`: Keeps us only exposing localhost, so our container won't be available outside of our machine.
 
-`:8080`: `8080` is the local port on our host machine that we are binding to
-`:10000`: `10000` is the port inside the container that we want `8080` to impersonate.
+`:8080`: is the local port on our host machine that we are binding to
+`:10000`: is the port inside the container that we want `8080` to impersonate.
 
-`/tcp`:  `tcp` is the protocol we want to use. You could also use `udp` or `sctp` if needed. You can learn more about that in the [User Guide](https://docs.docker.com/network/links/#connect-using-network-port-mapping)
+`/tcp`: is the protocol we want to use. You could also use `udp` or `sctp` if needed. You can learn more about that in the [User Guide](https://docs.docker.com/network/links/#connect-using-network-port-mapping)
 
 If you haven't hit enter yet. Go ahead and hit it now and kick off that Docker run command.
 

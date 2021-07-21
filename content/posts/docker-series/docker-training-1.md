@@ -59,7 +59,7 @@ The [__RUN__](https://docs.docker.com/engine/reference/builder/#run) is how we e
 
 The [__WORKDIR__](https://docs.docker.com/engine/reference/builder/#workdir) instruction is used to change the working directory within the project. Much like how the command `cd` is used in a shell. If the directory doesn't exist it will be created even if it is never used in any other Dockerfile instructions.
 
-The [__COPY__](https://docs.docker.com/engine/reference/builder/#copy) instruction will copy everything from the declared path relative to your project to the destination of where it will live inside your image. In this case we are copying everything from the base of the project to `$GOPATH/src/mypackage/myapp/`
+The [__COPY__](https://docs.docker.com/engine/reference/builder/#copy) instruction will copy everything from the declared path relative to your project to the destination of where it will live inside your image. In this case we are copying everything from the base of the project directory to `$GOPATH/src/mypackage/myapp/`. The first `.` represents your project directory. The second `.` represents the `WORKDIR` we set earlier.
 
 The [__ENTRYPOINT__](https://docs.docker.com/engine/reference/builder/#entrypoint) instruction is executable that will be ran when the container is started.
 
@@ -81,7 +81,7 @@ docker build . -t $MYIMAGENAME:$MYIMAGETAG
 ```
 Usage: `docker build [OPTIONS] PATH | URL | -`
 
-Generally when building an image you are in the root directory of your project. That directory also contains the Dockerfile that will be used to build the project. It is also important to tag your images so that you can find them in the future. If you don't when you search through your images you will only see `None` as the image name. 
+Generally when building an image you are in the root directory of your project. That directory also contains the Dockerfile that will be used to build the project. It is also important to tag your images so that you can find them in the future. This is the purpose of the `-t` in the command above. If you don't when you search through your images you will only see `None` as the image name. 
 
 ### Listing images in your local registry:
 ```shell
