@@ -1,10 +1,10 @@
 languageCode: "en-us"
-baseUrl: ""
+baseUrl: "https://integratn.io"
 title: "INTEGRATN.io"
 theme: "anubis"
 paginate: 10
 # disqusShortname: "yourdiscussshortname"
-googleAnalytics: "G-12345"
+googleAnalytics: HUGO_PARAMS_GOOGLE_ANALYTICS
 enableRobotsTXT: true
 
 menu:
