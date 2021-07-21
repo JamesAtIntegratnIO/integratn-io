@@ -3,23 +3,33 @@ baseUrl: ""
 title: "INTEGRATN.io"
 theme: "anubis"
 paginate: 10
-disqusShortname: "yourdiscussshortname"
+# disqusShortname: "yourdiscussshortname"
 googleAnalytics: "G-12345"
 enableRobotsTXT: true
 
 menu:
   main:
-  - identifier: archive
-    name: Archive
-    title: Archive
+  - identifier: blog
+    name: Blog
+    title: Blog
     url: /posts/
-    weight: 100
+    weight: 1
+  - identifier: categories
+    name: Categories
+    title: Categories
+    url: /categories/
+    weight: 2
+  - identifier: tags
+    name: Tags
+    title: Tags
+    url: /tags/
+    weight: 3
   - identifier: about
     name: About
     title: About
     url: /about/
-    wieight: 1
-
+    weight: 100
+ 
 taxonomies:
   category: categories
   tag: tags
@@ -34,21 +44,24 @@ params:
   style: dark-without-switcher
   readMore: false
   disableSummary: false
+  # customCSS:
+  #   - assets/css/my.css
   # utteranc.es support
-  utterancesRepo: ""  # mandatory
-  utterancesTheme: "" # optional
-  utterancesIssue: "" # optional
-  utterancesLabel: "" # optional
-  webmentions:
-    url: https://yourdomain.com/webemntions/receive
-    login: hugo-theme-anubis
-    pingback: true
+  # utterancesRepo: ""  # mandatory
+  # utterancesTheme: "" # optional
+  # utterancesIssue: "" # optional
+  # utterancesLabel: "" # optional
+  # webmentions:
+  #   url: https://yourdomain.com/webemntions/receive
+  #   login: hugo-theme-anubis
+  #   pingback: true
   social:
   - id: github
     name: jamesattensure
-#  - id: hugo
-#    url: "https://gohugo.io/"
-#    icon: "hugo"
+  - id: linkedin
+    name: jjdreier
+  - id: twitter
+    name: james_dreier
 
 markup:
   goldmark:
