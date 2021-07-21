@@ -3,6 +3,7 @@ title: "Docker Training 1 - Getting Started"
 date: 2021-07-20T18:25:07-06:00
 tags: ["docker-series"]
 categories: [tutorial, docker]
+series: [docker-training]
 nocomment: false
 draft: false
 summary: Getting started with docker. In this tutorial we will take a quick run at getting our environment set up in preperation for the rest of the series.
@@ -63,6 +64,7 @@ The [__COPY__](https://docs.docker.com/engine/reference/builder/#copy) instructi
 
 The [__ENTRYPOINT__](https://docs.docker.com/engine/reference/builder/#entrypoint) instruction is executable that will be ran when the container is started.
 
+<!--adsense-->
 
 ## Getting started with the Docker CLI
 

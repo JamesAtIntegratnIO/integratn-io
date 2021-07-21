@@ -3,6 +3,7 @@ title: "Docker Training 3 - My First Docker Deployment"
 date: 2021-07-20T18:39:58-06:00
 tags: ["docker-series"]
 categories: [docker, tutorial]
+series: [docker-training]
 nocomment: false
 draft: false
 summary: We've built an image. Now lets make it go vroom!
@@ -65,7 +66,7 @@ $ curl localhost:8080
 Hello from outerspace
 ```
 Look at that. We changed the response with the environment variable.
-
+<!--adsense-->
 ## Docker exec
 
 Lets look at the [docker exec](https://docs.docker.com/engine/reference/commandline/exec/) command while our container is running. Docker exec allows us to run commands inside our container while its already running. This can be very handy for debugging a container. But first we have to figure out what our container is named.

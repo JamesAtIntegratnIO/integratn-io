@@ -3,6 +3,7 @@ title: "Docker Training 2 - My First Docker Build"
 date: 2021-07-20T18:36:08-06:00
 tags: ["docker-series"]
 categories: [tutorial, docker]
+series: [docker-training]
 nocomment: false
 draft: false
 summary: Lets build our first docker image together
@@ -76,7 +77,7 @@ RUN go get -d -v
 RUN go build -o /go/bin/hello
 ENTRYPOINT ["/go/bin/hello"]
 ```
-
+<!--adsense-->
 Looks familiar, right?
 
 Lets step through this one more time. We declared our base image with the __FROM__ instruction. Then we use the __RUN__ instruction to install git. Used __WORKDIR__ to change the path we are working from. Copied in our code with the __COPY__ instruction. Used the __RUN__ Command again to get any possible dependencies that were needed for our program. One more final use of __RUN__ to build our app into an executable. Then finally we declared our __ENTRYPOINT__ with the final instruction pointing to where our app is located.

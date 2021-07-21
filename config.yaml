@@ -24,6 +24,11 @@ menu:
     title: Tags
     url: /tags/
     weight: 3
+  - identifier: series
+    name: Series
+    title: Series
+    url: /series/
+    weight: 4
   - identifier: about
     name: About
     title: About
@@ -33,11 +38,12 @@ menu:
 taxonomies:
   category: categories
   tag: tags
+  series: series
 
 params:
   author: "James Dreier"
   email: boboysdadda@gmail.com # used for microformats
-  avatar: "/images/me.jpg" # used for microformats
+  avatar: "images/me.jpg" # used for microformats
   images: 
   - "images/INTEGRATN-logo.png"
   description: "A lot of Devops | with just a little bit of crazy"
@@ -46,6 +52,9 @@ params:
   style: dark-without-switcher
   readMore: false
   disableSummary: false
+  adsense:
+    client: ca-pub-3643357265443233
+    inArticleSlot: "8178703612"
   # customCSS:
   #   - assets/css/my.css
   # utteranc.es support
