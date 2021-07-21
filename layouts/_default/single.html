@@ -14,7 +14,7 @@
             {{ partial "post-language-switcher.html" . }}
         </header>
         <div class="content e-content">
-            {{ replace .Content "<!--adsense-->" (partial "adsense-inarticle.html" .) | safeHTML }}
+            {{ replace .Content "<!--adsense-->" (partial "in-article-ads.html" .) | safeHTML }}
         </div>
         {{ partial "post-info.html" . }}
     </article>
