@@ -14,7 +14,7 @@ Lets recap where we are so far. We've gone over some of the basics of a Dockerfi
 ## Docker Run
 So lets deploy this image and play with it a little bit. Open up a terminal and type this command.
 ```shell
-$ docker run --publish 127.0.0.1:8080:10000/tcp hellofromtensure
+$ docker run --publish 127.0.0.1:8080:10000/tcp hellofromintegratnio
 ```
 
 Lets step through this command 1 piece at a time.
@@ -34,7 +34,7 @@ If you haven't hit enter yet. Go ahead and hit it now and kick off that Docker r
 
 You should see the following output.
 ```shell
-$ docker run -p 127.0.0.1:8080:10000/tcp hellofromtensure
+$ docker run -p 127.0.0.1:8080:10000/tcp hellofromintegratnio
 Starting Web Server
 Preparing to handle requests
 Ready for requests
@@ -48,7 +48,7 @@ $ curl localhost:8080
 Output:
 ```shell
 $ curl localhost:8080
-Hello from Tensure!!!
+Hello from integratnio!!!
 ```
 
 Now we are cooking. But what else can we do with this little container. 
@@ -57,7 +57,7 @@ Lets change the response from the curl request. We can do this by passing an env
 
 Lets run the following command:
 ```shell
-docker run --env MESSAGE="Hello from outerspace" -p 127.0.0.1:8080:10000/tcp hellofromtensure
+docker run --env MESSAGE="Hello from outerspace" -p 127.0.0.1:8080:10000/tcp hellofromintegratnio
 ```
 Now in another terminal lets use that curl statement again.
 ```shell
@@ -79,7 +79,7 @@ You will get an output similar to this but your `NAMES` field will not be the sa
 ```shell
 $ docker ps                     
 CONTAINER ID   IMAGE              COMMAND           CREATED         STATUS         PORTS                       NAMES
-56290825f889   hellofromtensure   "/go/bin/hello"   2 minutes ago   Up 2 minutes   127.0.0.1:8080->10000/tcp   hungry_bohr
+56290825f889   hellofromintegratnio   "/go/bin/hello"   2 minutes ago   Up 2 minutes   127.0.0.1:8080->10000/tcp   hungry_bohr
 ```
 
 Now that we have found our running container. Lets use the container name and execute a shell to get into our container.
@@ -89,7 +89,7 @@ docker exec --interactive --tty hungry_bohr /bin/sh
 Output:
 ```shell
 $ docker exec --interactive --tty hungry_bohr /bin/sh
-/go/src/tensure/go-rest-api # 
+/go/src/integratnio/go-rest-api # 
 ```
 Does that path look familiar? Its the same path we set for `WORKDIR` in the Dockerfile. We are in the shell of the container. Type `exit` and hit `enter` to leave the container.
 
