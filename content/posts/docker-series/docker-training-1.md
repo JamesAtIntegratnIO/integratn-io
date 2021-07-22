@@ -6,7 +6,7 @@ categories: [tutorial, docker]
 series: [docker-training]
 nocomment: false
 draft: false
-summary: Getting started with docker. In this tutorial we will take a quick run at getting our environment set up in preperation for the rest of the series.
+summary: Getting started with docker. In this tutorial we will take a quick run at getting our environment set up in preparation for the rest of the series.
 ---
 
 Before we can really dive into this project we need take care of a few things. First we need to get our environment setup to run docker. Then we need to go over a couple things about Dockerfiles and the Docker CLI 
@@ -20,7 +20,7 @@ Mac install is pretty straight forward. Follow the instructions below
 [Instructions](https://docs.docker.com/docker-for-mac/install/)
 
 ### Windows
-There are 2 ways to install docker on windows. 1 is supported with a Hyper-V Backend and the second is supported with a WSL2 backend. Windows home users have to use the WSL2 backend method. Pro, Education, and Enterpise can use either.
+There are 2 ways to install docker on windows. 1 is supported with a Hyper-V Backend and the second is supported with a WSL2 backend. Windows home users have to use the WSL2 backend method. Pro, Education, and Enterprise can use either.
 
 [WSL2 Instructions](https://docs.docker.com/docker-for-windows/install-windows-home/)
 
@@ -54,7 +54,7 @@ ENTRYPOINT ["/go/bin/hello"]
 ```
 Lets step through the various instructions and see what they do. I have linked all of the instruction identifiers below. There are many others and can be found in the [Dockerfile Builder Documentation](https://docs.docker.com/engine/reference/builder/)
 
-The [__FROM__](https://docs.docker.com/engine/reference/builder/#from) is an instruction that initializes a new build stage sets a base image. This is the container that will run while we build our image. Right now we are consuming the Golang image from Alpine. We chose this image because it is lighter and faster than the official Golang image. You can find more about Apline Linux and their images from [here](https://www.alpinelinux.org/about/). There are many other images to choose from and they can be found at [Docker Hub](https://hub.docker.com). 
+The [__FROM__](https://docs.docker.com/engine/reference/builder/#from) is an instruction that initializes a new build stage sets a base image. This is the container that will run while we build our image. Right now we are consuming the Golang image from Alpine. We chose this image because it is lighter and faster than the official Golang image. You can find more about Alpine Linux and their images from [here](https://www.alpinelinux.org/about/). There are many other images to choose from and they can be found at [Docker Hub](https://hub.docker.com). 
 
 The [__RUN__](https://docs.docker.com/engine/reference/builder/#run) is how we execute a shell command inside the container that we are building from. This instruction will execute any commands that are passed to it.
 

@@ -20,7 +20,7 @@ DockerTraining/
 ```
 Initialize the folder as a go project
 ```shell
-$ GO111MODULE=on go mod init hellofromintegratnio
+$ GO111MODULE=on go mod init helloFromIntegratnIO
 ```
 
 Add the following code to main.go
@@ -35,17 +35,17 @@ import (
 	"os"
 )
 
-func helloFromintegratnio(w http.ResponseWriter, r *http.Request) {
-	message := "Hello From integratnio"
+func helloFromIntegratnIO(w http.ResponseWriter, r *http.Request) {
+	message := "Hello From Integratn.IO"
 	if m := os.Getenv("MESSAGE"); m != "" {
 		message = m
 	}
 	fmt.Fprintf(w, "%s\n", message)
-	fmt.Println("Endpoing Hit: helloFromintegratnio")
+	fmt.Println("Endpoint Hit: helloFromIntegratnIO")
 }
 
 func handleRequests() {
-	http.HandleFunc("/", helloFromintegratnio)
+	http.HandleFunc("/", helloFromIntegratnIO)
 	log.Fatal(http.ListenAndServe(":10000", nil))
 }
 
@@ -84,12 +84,12 @@ Lets step through this one more time. We declared our base image with the __FROM
 
 Now we are ready to finally step through a build. Lets issue our first docker command.
 
-Run `$ docker build . -t helloFromintegratnio`
+Run `$ docker build . -t helloFromIntegratnIO`
 
 Lets look at the output.
 
 ```shell
-✭ ᐅ docker build . -t hellofromintegratnio
+✭ ᐅ docker build . -t helloFromIntegratnIO
 Sending build context to Docker daemon  84.48kB
 Step 1/7 : FROM golang:alpine
 alpine: Pulling from library/golang
@@ -139,14 +139,14 @@ Step 7/7 : ENTRYPOINT ["/go/bin/hello"]
 Removing intermediate container 42165a2c670f
  ---> 86fd2d2eb271
 Successfully built 86fd2d2eb271
-Successfully tagged hellofromintegratnio:latest
+Successfully tagged helloFromIntegratnIO:latest
 ```
 
 So whats happening here?
 
 Step 1/7: Our __FROM__ instruction is consumed and we see it fetch all the layers needed to build our base image.
 
-Step 2/7: __RUN__ executes and there is some normal `apt` otuput while it installs git and the required dependecies.
+Step 2/7: __RUN__ executes and there is some normal `apt` output while it installs git and the required dependencies.
 
 Step 3/7: We see __WORKDIR__ set our new path that we are "working in".
 
@@ -162,7 +162,7 @@ The image is built. But where did it go? Lets use `docker image ls` to find it
 ```shell
 ᐅ docker image ls
 REPOSITORY          TAG       IMAGE ID            CREATED             SIZE
-hellofromintegratnio    latest    dee090a053a3        About an hour ago   321MB
+helloFromIntegratnIO    latest    dee090a053a3        About an hour ago   321MB
 ```
 Heres how this output breaks down:
 
@@ -176,10 +176,10 @@ CREATED: How long ago the image was created
 
 SIZE: The size of our image.
 
-Lets take a quick second and talk about tags. Tags are important. They are a great way to reference what version of our image is running. They help us be declaritive in what we run in any environment. So, lets create an app with an actual tag instead of latest.
+Lets take a quick second and talk about tags. Tags are important. They are a great way to reference what version of our image is running. They help us be declarative in what we run in any environment. So, lets create an app with an actual tag instead of latest.
 
 ```shell
-ᐅ docker build . -t hellofromintegratnio:dev
+ᐅ docker build . -t helloFromIntegratnIO:dev
 Sending build context to Docker daemon  100.9kB
 Step 1/7 : FROM golang:alpine
  ---> 6af5835b113c
@@ -202,7 +202,7 @@ Step 7/7 : ENTRYPOINT ["/go/bin/hello"]
  ---> Using cache
  ---> dee090a053a3
 Successfully built dee090a053a3
-Successfully tagged hellofromintegratnio:dev
+Successfully tagged helloFromIntegratnIO:dev
 ```
 
 Wait a second. This output looks different. What happened?
@@ -214,10 +214,10 @@ Lets look at our images again.
 ```shell
 
 /Volumes/CaseSensitive/docker-training (main ✘)✹ ᐅ docker image ls                              
-REPOSITORY        TAG        IMAGE ID            CREATED             SIZE
-hellofromintegratnio  dev        dee090a053a3        About an hour ago   321MB
-hellofromintegratnio  latest     dee090a053a3        About an hour ago   321MB
-<none>            <none>     86fd2d2eb271        About an hour ago   321MB
+REPOSITORY            TAG        IMAGE ID            CREATED             SIZE
+helloFromIntegratnIO  dev        dee090a053a3        About an hour ago   321MB
+helloFromIntegratnIO  latest     dee090a053a3        About an hour ago   321MB
+<none>                <none>     86fd2d2eb271        About an hour ago   321MB
 ```
 
 So, we have the `dev` tag we just created. But lets look at the `IMAGE ID`. The `dev` tag and the `latest` tag have the same `IMAGE ID`. This is what we want because it is the most recently created image. 
