@@ -7,7 +7,7 @@ nocomment: false
 draft: false
 ---
 
-I recently made a change to how I work on repositories when I have to work with others. Its been a life saver. 
+I recently made a change to how I work on repositories when I have to work with others. It has been a life saver. 
 <!--more-->
 There is a TLDR example at the bottom to get you interested in the rest of the article.
 
@@ -15,12 +15,12 @@ There is a TLDR example at the bottom to get you interested in the rest of the a
 ## Pain Points
 Lets start with the normal git workflow and the pain points it causes. First you clone the repo. You create your branch and you start coding away. Then your buddy hits you up on Slack with a huge PR and scrolling the diff in Github isn't enough for you to approve it. Great. Now you have to stash the code you are working on, update your base so that you have their branch, and pull it all down. Now you can finally review the PR. This is nuts. Its annoying and you completely lose track of whatever you were just working on. I didn't even cover getting back to your branch and getting going again.
 
-## Painting a Picture with a dev story
+## Painting a Picture With a Dev Story
 As a developer I want to be able to review my teammates code without having to stash my work or maintain a second copy of the entire repository. I also want to be able to pause my work and work on a different branch again without having to stash my work or maintain a second copy.
 
 <!--adsense-->
 
-## Enter Git WorkTree
+## Enter Git Worktree
 First off, here is a link to the git worktree [documentation](https://git-scm.com/docs/git-worktree). I won't cover every caveat. So check it out for a lot more info.
 
 Git is capable of maintaining multiple working trees of a single repo. You heard that right. With git worktree you can check out more than one branch at a time and sensibly maintain each of those branches.
