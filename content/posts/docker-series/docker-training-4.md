@@ -12,7 +12,7 @@ So far we have created a small api that runs in a container. We've tested that i
 
 ## Docker Build Context
 
-The most common way to work with the build context is to build an image based on our current path. How we do `docker build . -t respository:version` We are doing this with a relatively small app. So we haven't gone over a few things that you will see in a larger project. One of the first things you will see in a larger project is a [.dockerignore](https://docs.docker.com/engine/reference/builder/#dockerignore-file) file. This is a lot like your `.gitignore`. We don't need every file in our repo to build our image. So why are we going to bring them into the build context. If you are doing a huge data science project with large sample model files. Or a financial model project with 100s of .csv files to test against. Now, I won't get into the argument about if that data realy belongs in the repo. Thats not the purpose of this series. But if it is we don't need it to build our base image to run our app.
+The most common way to work with the build context is to build an image based on our current path. How we do `docker build . -t repository:version` We are doing this with a relatively small app. So we haven't gone over a few things that you will see in a larger project. One of the first things you will see in a larger project is a [.dockerignore](https://docs.docker.com/engine/reference/builder/#dockerignore-file) file. This is a lot like your `.gitignore`. We don't need every file in our repo to build our image. So why are we going to bring them into the build context. If you are doing a huge data science project with large sample model files. Or a financial model project with 100s of .csv files to test against. Now, I won't get into the argument about if that data really belongs in the repo. Thats not the purpose of this series. But if it is we don't need it to build our base image to run our app.
 
 So take this structure for example:
 ```
@@ -67,7 +67,7 @@ Look at line 2 of that output.
 Sending build context to Docker daemon  144.4kB
 ````
 
-That happened so quick we didn't even talk about it before. When building your container. Everything in your local context will go into the build context unless you declaritvly exclude it. Not a big deal when your repo is only a couple megabytes. But when you get into the Gigabytes and you are trying to speed up the build you will come back here and find a way to trim a couple minutes right up front.
+That happened so quick we didn't even talk about it before. When building your container. Everything in your local context will go into the build context unless you declaratively exclude it. Not a big deal when your repo is only a couple megabytes. But when you get into the Gigabytes and you are trying to speed up the build you will come back here and find a way to trim a couple minutes right up front.
 
 So lets create a .dockerignore for the file structure example I posted earlier.
 
