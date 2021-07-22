@@ -75,4 +75,4 @@ REPOSITORY         TAG       IMAGE ID       CREATED          SIZE
 helloFromIntegratnIO   latest    f7dbee314464   12 minutes ago   11.8MB
 alpine             latest    49f356fa4513   10 days ago      5.61MB
 ```
-Look at this. Its only 6.2MB bigger than our base image. How awesome is that.
+Look at this. Its only 6.2MB bigger than our base image. How awesome is that. On our next post in the series we are going to switch gears from this small helloWorld to using an actual crud service with a database. Get ready to step it up another notch.
