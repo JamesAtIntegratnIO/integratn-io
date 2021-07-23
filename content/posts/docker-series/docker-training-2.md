@@ -12,7 +12,7 @@ summary: Lets build our first docker image together
 The goal of this project is not to learn how to build APIs in Golang or anything extra. If you want to learn more about the snippet below feel free to dig through the [Go Docs](https://golang.org/pkg/net/http/). Now lets create files and get started.
 
 To get started we need to create a project to store our app we are going to work with. Create the following structure. We'll keep filling more in as we go later.
-```
+```shell
 DockerTraining/
     go-rest-api/
         main.go
