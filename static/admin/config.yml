@@ -24,3 +24,17 @@ collections:
       - {label: "Series", name: series, widget: "list"}
       - {label: "No Comment", name: "nocomment", widget: "boolean", default: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "docker-series"
+    label: "Docker Series"
+    folder: "content/posts/docker-series"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Series", name: series, widget: "list"}
+      - {label: "No Comment", name: "nocomment", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
