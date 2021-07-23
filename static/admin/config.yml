@@ -3,8 +3,6 @@ backend:
   branch: main
   repo: jamesattensure/integratn-io
 
-
-
 publish_mode: editorial_workflow
 media_folder: "static/images"
 public_folder: "/images"
@@ -16,11 +14,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-<<<<<<< HEAD
-      - {label: "Draft", name: draft, widget: "boolean", default: false}
-=======
       - {label: "Draft", name: draft, widget: "boolean", default: true}
->>>>>>> 97a48c1 (fixed draft bool)
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
