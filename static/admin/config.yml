@@ -2,12 +2,6 @@ backend:
   name: git-gateway
   branch: main
   repo: jamesattensure/integratn-io
-  api_root: https://api.github.com
-  site_domain: integratn.io
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
-  cms_label_prefix: netlify-cms/
-
 
 
 
