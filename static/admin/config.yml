@@ -28,3 +28,4 @@ collections:
     nested:
       depth: 10
       summary: '{{title}}'
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
