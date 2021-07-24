@@ -14,7 +14,7 @@ nocomment: false
 
 
 So here is how I got my blog all set up. It was a lot of back and forth on how I set this up. So this post is for those that read it. But also for me. It was a lot of work and I want to capture what I did so I can reproduce it later.
-
+<!--more-->
 This is by no means a complete set of instructions that you can iterate through. But more of a flow. I try to call out the things that were pain points for me directly though.
 
 ## Setting up Hugo
@@ -111,7 +111,7 @@ collections:
 Your collections are built based on your hugo [archetypes](https://gohugo.io/content-management/archetypes/). There are a couple extra widgets that I don't use. Those can be found in the [widget doc](https://www.netlifycms.org/docs/widgets)
 
 Make sure you get through the whole doc and complete the authentication steps or anyone will be able to access the cms features.
-
+<!--adsense-->
 ## Additional Things to Setup
 
 ### Analytics
