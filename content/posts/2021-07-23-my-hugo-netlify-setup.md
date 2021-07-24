@@ -31,4 +31,9 @@ Next up is adding the theme. You can find a lot of them on the [Hugo site](https
 
 Now I have everything installed. Lets see it run. To run it locally to make sure everything works you can use `hugo serve`. But if you really want to get going then you will need to deploy it somewhere online. I put mine on netlify as I knew the name already and the process was simple enough. 
 
-Create your account on [netlify](https://app.netlify.com/signup). After your account is created you can create a new site with this magic button ![new site button](/images/newsitebutton.png)
+Create your account on [netlify](https://app.netlify.com/signup). After your account is created you can create a new site with this magic button
+
+![new site button](/images/newsitebutton.png)
+
+After this you will go through some steps to connect it to your github repository and a deploy should be triggered. When its all said and done you should have your new site up and ready to go.
+
