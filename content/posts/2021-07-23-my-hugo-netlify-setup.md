@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 layout: post
 title: My Hugo+Netlify setup
 date: 2021-07-23T22:17:46.983Z
