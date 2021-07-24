@@ -42,7 +42,7 @@ taxonomies:
 
 params:
   author: "James Dreier"
-  email: boboysdadda+integratnio@gmail.com # used for microformats
+  email: james@integratn.io # used for microformats
   avatar: "images/me.jpg" # used for microformats
   images: 
   - "images/INTEGRATN-logo.png"
