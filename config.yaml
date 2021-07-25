@@ -42,7 +42,8 @@ author:
   link: "https://twitter.com/james_dreier"
 
 params:
-  analytics: true
+  analytics: 
+    enable: true
   version: "0.2.X"
   author: "James Dreier"
   email: "james@integratn.io" # used for microformats
