@@ -7,7 +7,7 @@
         <a class="p-email u-email email" rel="me" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
     {{ end }}
 
-    {{ if .Site.Params.avatar }} 
+    {{ if .Site.Params.home.profile.avatarURL }} 
         <img class="u-photo" src="{{ .Site.Params.home.profile.avatarURL }}" />
     {{ end }}
 </p> 
