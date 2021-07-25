@@ -42,6 +42,10 @@ taxonomies:
   tag: tags
   series: series
 
+author:
+  name: James
+  link: "https://twitter.com/james_dreier"
+
 params:
   version: "0.2.X"
   author: "James Dreier"
