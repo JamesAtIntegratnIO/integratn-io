@@ -1,9 +1,5 @@
-<p class="h-card vcard">
-    
-
+<div class="h-card vcard">
     <a href={{ .Site.BaseURL }} class="p-name u-url url u-uid fn" rel="me">{{ .Site.Params.author }}</a> 
-    
-
     {{ if .Site.Params.email }} 
         /
         <a class="p-email u-email email" rel="me" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
@@ -12,4 +8,8 @@
     {{ if .Site.Params.home.profile.avatarURL }} 
         <img class="u-photo" src="{{ .Site.Params.home.profile.avatarURL }}" />
     {{ end }}
-</p> 
+
+    {{ if .Site.Params.home.profile.subtitle }}
+        <p class="p-note">{{ .Site.Params.home.profile.subtitle }}</p>
+    {{ end }}
+</div> 
