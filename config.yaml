@@ -3,6 +3,7 @@ baseUrl: "https://integratn.io"
 title: "INTEGRATN.io"
 theme: "CodeIT"
 paginate: 10
+# comment for preview deploy
 # disqusShortname: "yourdiscussshortname"
 googleAnalytics: G-MSXV04G0ZQ
 enableRobotsTXT: true
