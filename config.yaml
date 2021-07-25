@@ -49,7 +49,7 @@ author:
 params:
   version: "0.2.X"
   author: "James Dreier"
-  email: james@integratn.io # used for microformats
+  email: "james@integratn.io" # used for microformats
   avatar: "images/me.png" # used for microformats
   images: 
   - "images/INTEGRATN-logo.png"
@@ -95,6 +95,9 @@ params:
     since: 2021
     license: '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
   page:
+    library:
+      css:
+        myCSS: "css/my.css"
     share:
       enable: true
       Twitter: true
