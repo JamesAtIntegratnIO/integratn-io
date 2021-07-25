@@ -71,7 +71,7 @@ params:
     name: jamesattensure
   - id: linkedin
     name: jjdreier
-  - id: Twitter
+  - id: twitter
     name: james_dreier
 
 markup:
