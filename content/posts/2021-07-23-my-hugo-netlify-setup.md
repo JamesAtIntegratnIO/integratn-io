@@ -9,6 +9,9 @@ tags:
   - hugo
   - netlify
   - howTo
+syndication:
+  - name: dev.to
+    url: https://dev.to/jamesatintegrationio/my-hugo-netlify-setup-1b7p
 nocomment: false
 ---
 

@@ -4,6 +4,13 @@ date: 2021-07-20T18:25:07-06:00
 tags: ["docker-series"]
 categories: [tutorial, docker]
 series: [docker-training]
+syndication:
+- name: dev.to
+  url: https://dev.to/jamesatintegrationio/docker-training-getting-started-3p65
+- name: twitter
+  url: https://twitter.com/james_dreier/status/1417679172080709632?s=20
+- name: linkedIn
+  url: https://www.linkedin.com/feed/update/urn:li:activity:6823681897802141696
 nocomment: false
 draft: false
 summary: Getting started with docker. In this tutorial we will take a quick run at getting our environment set up in preparation for the rest of the series.
