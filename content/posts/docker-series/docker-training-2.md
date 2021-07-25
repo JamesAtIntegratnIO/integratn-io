@@ -4,6 +4,13 @@ date: 2021-07-20T18:36:08-06:00
 tags: ["docker-series"]
 categories: [tutorial, docker]
 series: [docker-training]
+syndication:
+  - name: dev.to
+	url: https://dev.to/jamesatintegratnio/docker-training-2-my-first-docker-build-3d6d
+  - name: twitter
+	url: https://twitter.com/james_dreier/status/1419401321380290564?s=20
+  - name: linkedIn
+	url: https://www.linkedin.com/posts/jjdreier_docker-training-2-my-first-docker-build-activity-6824327123289849856-YHQv
 nocomment: false
 draft: false
 summary: Lets build our first docker image together

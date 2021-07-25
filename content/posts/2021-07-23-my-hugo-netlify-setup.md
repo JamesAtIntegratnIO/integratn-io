@@ -12,6 +12,10 @@ tags:
 syndication:
   - name: dev.to
     url: https://dev.to/jamesatintegrationio/my-hugo-netlify-setup-1b7p
+  - name: twitter
+    url: https://twitter.com/james_dreier/status/1419138507524685830
+  - name: linkedin
+    url: https://www.linkedin.com/posts/jjdreier_my-hugonetlify-setup-activity-6824748477730340864-_8Af
 nocomment: false
 ---
 
