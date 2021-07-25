@@ -1,7 +1,7 @@
 languageCode: "en-us"
 baseUrl: "https://integratn.io"
 title: "INTEGRATN.io"
-theme: "anubis"
+theme: "CodeIT"
 paginate: 10
 # disqusShortname: "yourdiscussshortname"
 googleAnalytics: G-MSXV04G0ZQ
@@ -41,6 +41,7 @@ taxonomies:
   series: series
 
 params:
+  version: "0.2.X"
   author: "James Dreier"
   email: james@integratn.io # used for microformats
   avatar: "images/me.png" # used for microformats
@@ -67,14 +68,12 @@ params:
     login: integratn.io
     pingback: true
   social:
-  - id: github
-    name: jamesattensure
-  - id: linkedin
-    name: jjdreier
-  - id: twitter
-    name: james_dreier
+    - id: github
+      name: jamesattensure
+    - id: linkedin
+      name: jjdreier
+    - id: twitter
+      name: james_dreier
 
 markup:
-  goldmark:
-    renderer:
-      unsafe: true # enable raw HTML in Markdown
+  noClasses: false
