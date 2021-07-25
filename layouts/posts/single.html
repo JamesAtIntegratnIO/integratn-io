@@ -47,6 +47,13 @@
                         {{- dict "Categories" . | T "includedInCategories" | safeHTML -}}
                     </span>
                 {{- end -}}
+                {{ if .Page.Params.syndication }}
+                    <span class="post-category"> 
+                        {{ range .Page.Params.syndication }}
+                            <a rel="syndication" class="u-syndication" href="{{ .url }}">@{{ .name }}</a></li>  
+                        {{ end }}
+                    </span>
+                {{ end }}
                 <a class="post-hidden-url u-url" href="{{ .Permalink }}">{{ .Permalink }}</a>
             </div>
             <div class="post-meta-line">
