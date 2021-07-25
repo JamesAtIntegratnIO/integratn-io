@@ -6,6 +6,7 @@ paginate: 10
 # disqusShortname: "yourdiscussshortname"
 googleAnalytics: G-MSXV04G0ZQ
 enableRobotsTXT: true
+enableEmoji: true
 
 menu:
   main:
@@ -68,12 +69,70 @@ params:
     login: integratn.io
     pingback: true
   social:
-    - id: github
-      name: jamesattensure
-    - id: linkedin
-      name: jjdreier
-    - id: twitter
-      name: james_dreier
-
+    github: "jamesattensure"
+    linkedin: "jjdreier"
+    twitter: "james_dreier"
+    devto: "jamesatintegratnio"
+    rss: true
+  home:
+    rss: 10
+    profile:
+      enable: true
+      avatarURL: "/images/me.png"
+      social: true
+      subtitle: "A lot of Devops | with just a little bit of crazy"
+      typeit: true
+    posts:
+      enable: true
+  footer:
+    copyright: true
+    author: true
+    since: 2021
+    license: '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+  page:
+    share:
+      enable: true
+      Twitter: true
+      Facebook: true
+      Linkedin: True
+      Whatsapp: false
+      Pinterest: false
+      Tumblr: false
+      HackerNews: true
+      Reddit: true
+      VK: false
+      Buffer: false
+      Xing: false
+      Line: true
+      Instapaper: false
+      Pocket: true
+      Digg: false
+      Stumbleupon: false
+      Flipboard: false
+      Weibo: true
+      Renren: false
+      Myspace: false
+      Blogger: false
+      Baidu: false
+      Odnoklassniki: false
+      Evernote: false
+      Skype: false
+      Trello: false
+      Mix: false
+      Telegram: false
 markup:
-  noClasses: false
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    lineNumbersInTable: true
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
