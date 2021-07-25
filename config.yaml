@@ -63,7 +63,7 @@ params:
   # utterancesIssue: "" # optional
   # utterancesLabel: "" # optional
   webmentions:
-  url: https://integratn.io/webemntions/receive
+    # url: https://integratn.io/webemntions/receive
     login: integratn.io
     pingback: true
   social:
