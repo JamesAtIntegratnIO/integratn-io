@@ -26,11 +26,6 @@ menu:
     title: Tags
     url: /tags/
     weight: 3
-  - identifier: series
-    name: Series
-    title: Series
-    url: /series/
-    weight: 4
   - identifier: about
     name: About
     title: About
