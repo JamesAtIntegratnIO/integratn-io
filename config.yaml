@@ -62,10 +62,10 @@ params:
   # utterancesTheme: "" # optional
   # utterancesIssue: "" # optional
   # utterancesLabel: "" # optional
-  # webmentions:
+  webmentions:
   #   url: https://yourdomain.com/webemntions/receive
-  #   login: hugo-theme-anubis
-  #   pingback: true
+    login: integratn.io
+    pingback: true
   social:
   - id: github
     name: jamesattensure
