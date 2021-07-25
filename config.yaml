@@ -44,6 +44,8 @@ author:
 params:
   analytics: 
     enable: true
+    google: G-MSXV04G0ZQ
+      id: 
   version: "0.2.X"
   author: "James Dreier"
   email: "james@integratn.io" # used for microformats
