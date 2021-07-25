@@ -45,7 +45,7 @@ params:
   version: "0.2.X"
   author: "James Dreier"
   email: "james@integratn.io" # used for microformats
-  avatar: "images/me.png" # used for microformats
+  avatar: "images/me2.png" # used for microformats
   images: 
   - "images/INTEGRATN-logo.png"
   description: "A lot of Devops | with just a little bit of crazy"
@@ -78,7 +78,7 @@ params:
     rss: 10
     profile:
       enable: true
-      avatarURL: "/images/me.png"
+      avatarURL: "/images/me2.png"
       social: true
       subtitle: "A lot of Devops | with just a little bit of crazy"
       typeit: true
