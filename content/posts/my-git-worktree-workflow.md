@@ -3,6 +3,13 @@ title: "My Git Worktree Workflow"
 date: 2021-07-21T20:29:02-06:00
 tags: [git, developer, workflow]
 categories: [workflow, dev-life]
+syndication:
+  - name: dev.to
+    url: https://dev.to/jamesatintegratnio/my-git-worktree-workflow-186f
+  - name: twitter
+    url: https://twitter.com/james_dreier/status/1419403046854045706?s=20
+  - name: linkedin
+    url: https://www.linkedin.com/posts/jjdreier_my-git-worktree-workflow-activity-6823824959446552576-niGQ
 nocomment: false
 draft: false
 ---
@@ -108,4 +115,4 @@ $ pushd ../temp
 $ git commit -a -m 'emergency fix for boss'
 $ popd
 $ git worktree remove ../temp
-````
+```
