@@ -66,7 +66,7 @@ $ curl localhost:8080
 Hello from outerspace
 ```
 Look at that. We changed the response with the environment variable.
-<!--adsense-->
+
 ## Docker exec
 
 Lets look at the [docker exec](https://docs.docker.com/engine/reference/commandline/exec/) command while our container is running. Docker exec allows us to run commands inside our container while its already running. This can be very handy for debugging a container. But first we have to figure out what our container is named.
@@ -102,4 +102,4 @@ Lets look at the command real quick.
 `hungry_bohr` is the name of my running container. Yours will be different.
 `/bin/sh` This is the command we want to run in the container. One caveat to this. Whatever you run against the container has to actually be part of the container. In an effort to trim containers down a lot of container images don't have a shell command available.
 
-
+So now, we've ran our container. We've exec'd into our container so that we can explore it. Thats it for this time. Get ready for next time when we have a brief exploration into the build context.
