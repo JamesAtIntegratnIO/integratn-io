@@ -15,6 +15,6 @@ syndication:
     url: https://www.linkedin.com/posts/jjdreier_docker-cheat-sheet-activity-6825263108236328960-eqCd
 nocomment: false
 ---
-Here is a just a huge list of handy docker commands.
+Here is just a huge list of handy docker commands.
 <!--more-->
 {{< gist jamesattensure e5679703d5828cb9fc5a59712a4dd4dc >}}
