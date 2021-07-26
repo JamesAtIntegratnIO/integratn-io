@@ -8,6 +8,11 @@ categories:
 tags:
   - docker
   - snippet
+syndication:
+  - name: twitter
+    url: https://twitter.com/james_dreier/status/1419496583113191433?s=20
+  - name: linkedIn
+    url: https://www.linkedin.com/posts/jjdreier_docker-cheat-sheet-activity-6825263108236328960-eqCd
 nocomment: false
 ---
 Here is a just a huge list of handy docker commands.
