@@ -15,6 +15,7 @@
         {{- partial "head/link.html" . -}}
         {{- partial "head/seo.html" . -}}
         {{- partial "head/webmentions.html" . -}}
+        {{- partial "head/indieauth.html" . -}}
     </head>
     <body header-desktop="{{ .Site.Params.header.desktopMode }}" header-mobile="{{ .Site.Params.header.mobileMode }}">
         {{- /* Check theme isDark before body rendering */ -}}
