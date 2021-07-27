@@ -1,6 +1,3 @@
 [submodule "themes/CodeIT"]
 	path = themes/CodeIT
 	url = https://github.com/sunt-programator/CodeIT.git
-[submodule "netlify/functions/gozette"]
-	path = netlify/functions/gozette
-	url = https://github.com/JamesAtTensure/gozette.git
