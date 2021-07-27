@@ -4,6 +4,13 @@ date: 2021-07-20T18:39:58-06:00
 tags: ["docker-series"]
 categories: [docker, tutorial]
 series: [docker-training]
+syndication:
+  - name: dev.to
+    url: https://dev.to/jamesatintegratnio/docker-training-3-my-first-docker-deployment-4m92
+  - name: twitter
+    url: https://twitter.com/james_dreier/status/1419844399354241031?s=20
+  - name: linkedin
+    url: https://www.linkedin.com/posts/jjdreier_docker-training-3-my-first-docker-deployment-activity-6825609258286006272-lPIq
 nocomment: false
 draft: false
 summary: We've built an image. Now lets make it go vroom!
