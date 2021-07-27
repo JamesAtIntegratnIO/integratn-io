@@ -1,6 +1,11 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = "make buildprod buildgo"
+
+[build.environment]
+  # Change this path with the path to your repository
+  GO_IMPORT_PATH = "github.com/jamesattensure/gozette"
+  GO111MODULE = "on"
 
 [context.production.environment]
 HUGO_VERSION = "0.85.0"
@@ -15,7 +20,7 @@ HUGO_VERSION = "0.85.0"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildDrafts --buildFuture -b $DEPLOY_PRIME_URL"
+command = "make buildpreview buildgo"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.85.0"
