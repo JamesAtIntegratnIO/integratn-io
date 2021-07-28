@@ -1,0 +1,14 @@
+{ 
+	"Insert syndicaton block": {
+	  "prefix": "syndication",
+	  "body": [
+		"syndication:",
+			"- name: dev.to",
+			"  url: ${0}",
+			"- name: twitter",
+			"  url: ${1}",
+			"- name: linkedin",
+			"  url: ${2}",
+	  ]
+	}
+  }

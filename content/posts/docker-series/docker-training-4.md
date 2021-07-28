@@ -3,12 +3,19 @@ draft: false
 title: Docker Training 4 - Managing The Build Context
 date: 2021-07-21T19:12:26-06:00
 categories:
-  - tutorial
+  - tutorial 
   - docker
 tags:
   - docker-series
 series:
   - docker-training
+syndication:
+  - name: dev.to
+    url: https://dev.to/jamesatintegratnio/docker-training-4-managing-the-build-context-58pa
+  - name: twitter
+    url: https://twitter.com/james_dreier/status/1420379062527266817
+  - name: linkedin
+    url: https://www.linkedin.com/posts/jjdreier_docker-training-4-managing-the-build-context-activity-6826145052952199168-xvZt
 nocomment: false
 ---
 
