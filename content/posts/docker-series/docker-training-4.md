@@ -1,11 +1,15 @@
 ---
-title: "Docker Training 4 - Managing The Build Context"
+draft: false
+title: Docker Training 4 - Managing The Build Context
 date: 2021-07-21T19:12:26-06:00
-tags: ["docker-series"]
-categories: [tutorial, docker]
-series: [docker-training]
+categories:
+  - tutorial
+  - docker
+tags:
+  - docker-series
+series:
+  - docker-training
 nocomment: false
-draft: true
 ---
 
 So far we have created a small api that runs in a container. We've tested that its working. Worked with environment variables inside the container on the `docker run` command. Accessed a shell inside the container with the `docker exec` command. Now I want to talk about the docker build context.
