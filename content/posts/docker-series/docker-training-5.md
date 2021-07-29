@@ -4,6 +4,13 @@ date: 2021-07-29T16:12:30-06:00
 tags: ["docker-series", cosmtrek/air, development, devops]
 categories: [tutorial, docker]
 series: [docker-training]
+syndication:
+- name: dev.to
+  url: https://dev.to/jamesatintegratnio/developing-inside-a-docker-container-3ofd
+- name: twitter
+  url: https://twitter.com/james_dreier/status/1420888484643020802?s=20
+- name: linkedin
+  url: https://www.linkedin.com/posts/jjdreier_docker-training-5-developing-inside-a-docker-activity-6826654269555396608-zTU0
 nocomment: false
 draft: false
 ---
