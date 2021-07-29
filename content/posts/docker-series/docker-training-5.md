@@ -1,6 +1,6 @@
 ---
 title: "Docker Training 5 -  Developing Inside A Docker Container"
-date: 2021-07-21T19:12:30-06:00
+date: 2021-07-29T16:12:30-06:00
 tags: ["docker-series", cosmtrek/air, development, devops]
 categories: [tutorial, docker]
 series: [docker-training]
