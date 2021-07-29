@@ -5,7 +5,7 @@ tags: ["docker-series", cosmtrek/air, development, devops]
 categories: [tutorial, docker]
 series: [docker-training]
 nocomment: false
-draft: true
+draft: false
 ---
 
 
@@ -31,7 +31,7 @@ If we wanted to consume a specific tag then we could do that as well. Just make 
 
 Lets add a little config for air so that it will cleanup for us when its done. In `$projectRoot/go-rest-api/`, lets add `.air.conf` and fill it with the following then save.
 
-```bash
+```shell
 # .air.conf
 # Config file for [Air](https://github.com/cosmtrek/air) in TOML format
 

@@ -5,7 +5,7 @@ theme: "CodeIT"
 paginate: 10
 # comment for preview deploy
 # disqusShortname: "yourdiscussshortname"
-googleAnalytics: G-MSXV04G0ZQ
+googleAnalytics: 
 enableRobotsTXT: true
 enableEmoji: true
 
@@ -43,9 +43,9 @@ author:
 
 params:
   analytics: 
-    enable: true
+    enable: false
     google: 
-      id: G-MSXV04G0ZQ
+      id: 
   version: "0.2.X"
   author: "James Dreier"
   email: "james@integratn.io" # used for microformats
