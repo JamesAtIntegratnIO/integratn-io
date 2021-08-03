@@ -4,6 +4,13 @@ date: 2021-08-02T19:12:34-06:00
 tags: ["docker-series"]
 categories: [tutorial, docker]
 series: [docker-training]
+syndication:
+- name: dev.to
+  url: https://dev.to/jamesatintegratnio/multi-stage-builds-in-docker-2265
+- name: twitter
+  url: https://twitter.com/james_dreier/status/1422380308087836677?s=20
+- name: linkedIn
+  url: https://www.linkedin.com/posts/jjdreier_docker-training-6-multi-stage-builds-activity-6828146050105180160-isMi
 nocomment: false
 draft: false
 ---
