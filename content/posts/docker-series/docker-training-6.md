@@ -1,11 +1,11 @@
 ---
 title: "Docker Training 6 - Multi Stage Builds"
-date: 2021-07-21T19:12:34-06:00
+date: 2021-08-02T19:12:34-06:00
 tags: ["docker-series"]
 categories: [tutorial, docker]
 series: [docker-training]
 nocomment: false
-draft: true
+draft: false
 ---
 
 # Multi Stage Builds
