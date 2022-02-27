@@ -107,5 +107,5 @@
         {{- partial "comment.html" . -}}
     </article>
     {{ $visitor := getJSON "./netlify/functions/geolocate"}}
-    <p>{{ visitor }}</p>
+    <p>{{ $visitor }}</p>
 {{- end -}}
