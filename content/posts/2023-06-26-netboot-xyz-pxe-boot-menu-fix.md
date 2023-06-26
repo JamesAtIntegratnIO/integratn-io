@@ -1,6 +1,6 @@
 ---
 title: "Pxeboot With Netboot.xyz Menu Fix"
-date: 2023-06-26T20:27:10-06:00
+date: 2023-06-26T08:15:10-06:00
 tags:
 - pxe
 - netboot
